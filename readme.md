@@ -2,15 +2,19 @@
 
 通常用PyTorch、Tensorflow开发神经网络，得到模型。
 
-如果是网络服务，可直接用python开发服务程序。
+如果是网络服务，可直接用python-onnx开发服务程序。
 
 如需开发客户端程序，Windows上首选基于OpenCV的部署方案，Windows ML 也值得尝试。
+
+## python-onnx网络服务
+
+安装Onnx库，推理模式运行网络。
+
+* 其中Onnx作为中立的交换模型，可用[工具](https://github.com/onnx/onnxmltools)由其他模型转换。
 
 ## OpenCV方案
 
 OpenCV的DNN模块直接支持 Caffe、Darknet、Onnx、Tensorflow、Torch 模型。
-
-* 其中Onnx作为中立的交换模型，可用[工具](https://github.com/onnx/onnxmltools)由其他模型转换。
 
 ## Windows ML方案(UWP)
 
